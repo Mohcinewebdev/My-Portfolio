@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-white" id="body">
     <header class="flex justify-between sticky top-0 bg-white border-b items-center">
         <a href="index.html"><h1 class="pl-4 text-3xl font-bold uppercase text-green-700">Portfolio</h1></a>
-        <div class="nav-links duration-500 lg:static absolute bg-white border-b lg:border-none lg:min-h-fit min-h-[50vh] lg:w-auto left-0 top-[-600%] w-full flex flex-col justify-center items-center px-5">
+        <div class="nav-links duration-500 lg:static absolute bg-white border-b lg:border-none lg:min-h-fit min-h-fit lg:w-auto left-0 top-[-750%] w-full flex flex-col justify-center items-center px-5">
         <div class="flex lg:flex-row flex-col lg:items-center lg:gap-[4vw] gap-8">
         <nav class="space-x-3 font-semibold mr-2 flex lg:flex-row flex-col items-center gap-2">
             <a class="transition hover:bg-green-700 hover:text-white p-2 rounded-full" href="index.html">Home</a>
@@ -42,7 +43,7 @@
         <h1 class="text-5xl md:text-6xl font-bold pl-6 pt-8">Contact Me Now</h1>
         </div>
 
-        <form action="#" method="post" class="border p-6 my-10 md:mr-12 md:mt-12 m-auto w-[90%] space-y-3">
+        <form action="#" method="post" class="border rounded-lg p-6 my-10 md:mr-12 md:mt-12 m-auto w-[90%] space-y-3">
             <h2 class="text-3xl font-bold">Send Me A <span class="text-green-700">Message</span></h2>
             <input class="p-4 outline-none border-b w-full" type="text" placeholder="Full Name" required> <br>
             <input class="p-4 outline-none border-b w-full" type="email" placeholder="Email Address" required> <br>
@@ -52,36 +53,43 @@
         </form>
         </div>
 
-        <div class="lg:flex-row justify-between flex-col flex-wrap flex items-center gap-4 mb-10 md:px-4">
-            <div class="flex border w-[70%] lg:w-fit">
-                <p class="py-8 px-16 font-semibold">📞​ +213696244248</p>
+        <div class="lg:flex-row justify-between flex-col flex items-center gap-4 mb-10 md:px-4">
+            <div class="flex border rounded-lg w-[70%] lg:w-fit py-6 px-14">
+                <a class="py-2 px-4 font-semibold" href="tel:+123696244248">​📞 +213696244248</a>
             </div>
-            <div class="flex border w-[70%] lg:w-fit">
-                <a class="py-8 px-16 font-semibold" href="mailto:webdevmohcine@gmail.com">📧 webdevmohcine@gmail.com</a>
+            <div class="flex border rounded-lg w-[70%] lg:w-fit py-6 px-14">
+                <a class="py-2 px-4 font-semibold" href="mailto:webdevmohcine@gmail.com">📧 webdevmohcine@gmail.com</a>
             </div>
-            <div class="flex border w-[70%] lg:w-fit">
-                <p class="py-8 px-16 font-semibold">📍​ Batna / Algeria</p>
+            <div class="flex border rounded-lg w-[70%] lg:w-fit py-6 px-14">
+                <p class="py-2 px-4 font-semibold">📍​ Batna / Algeria</p>
             </div>
         </div>
     </main>
 
-    <footer class="text-center bg-gray-100 rounded-t-[50%] pb-12">
-        <h2 class="text-green-800 text-4xl font-bold p-4 pt-12">Mohcene Ziadi</h2>
-        <p class="text-gray-700 text-[18px] pb-8">19 years old, A Full Stack Web Developer</p>
-        <ul class="flex gap-10 justify-center">
-            <li><a class="font-semibold text-gray-900 text-[18px] hover:text-green-700 duration-300" href="index.html">Home</a></li>
-            <li><a class="font-semibold text-gray-900 text-[18px] hover:text-green-700 duration-300" href="about.html">About Me</a></li>
-            <li><a class="font-semibold text-gray-900 text-[18px] hover:text-green-700 duration-300" href="projects.html">My Projects</a></li>
-            <li><a class="font-semibold text-gray-900 text-[18px] hover:text-green-700 duration-300" href="contact.html">Contact Me</a></li>
+    <footer class="text-center bg-gray-100 md:rounded-t-[50%] rounded-t-[30%] pb-12">
+        <h2 class="text-green-800 md:text-4xl text-3xl duration-300 font-bold p-4 pt-12">Mohcene Ziadi</h2>
+        <p class="text-gray-700 text-[18px] pb-8 md:px-24 px-6">Full-stack Web Developer, Creating responsive, functional web experiences with modern technologies</p>
+        <ul class="flex md:gap-10 gap-5 justify-center">
+            <li><a class="font-semibold text-gray-900 md:text-[18px] text-[16px] hover:text-green-700 duration-300" href="index.html">Home</a></li>
+            <li><a class="font-semibold text-gray-900 md:text-[18px] text-[16px] hover:text-green-700 duration-300" href="about.html">About</a></li>
+            <li><a class="font-semibold text-gray-900 md:text-[18px] text-[16px] hover:text-green-700 duration-300" href="projects.html">Projects</a></li>
+            <li><a class="font-semibold text-gray-900 md:text-[18px] text-[16px] hover:text-green-700 duration-300" href="contact.html">Contact</a></li>
         </ul>
-        <div class="space-x-4 text-1xl border-l px-4 border-r pt-10">
+        <div class="space-x-4 text-1xl border-l px-4 border-r pb-12 pt-10">
             <a href="https://www.facebook.com/mo.hcine.149843" target="_blank" class="hover:text-green-600 transition p-2 text-[20px]"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/mohcine_z26" target="_blank" class="hover:text-green-600 transition p-2 text-[20px]"><i class="fab fa-instagram"></i></a>
             <a href="https://www.t.me/mohcine_z26" target="_blank" class="hover:text-green-600 transition p-2 text-[20px]"><i class="fab fa-telegram"></i></a>
             <a href="https://www.linkedin.com/in/mohcene-ziadi-866b45366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="hover:text-green-600 transition p-2 text-[20px]"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/Mohcinewebdev" target="_blank" class="hover:text-green-600 transition p-2 text-[20px]"><i class="fab fa-github"></i></a>
         </div>
-        <p class="text-[18px] text-gray-700 pt-8 px-3">Designed and Developed By Mohcene Ziadi  |  &copy;2026 All Rights Reserved</p>
+         <div class="footer-border text-[18px]">
+            <h2 class="font-bold pb-2">Contact Info</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <a class="text-gray-700 text-[16px] hover:text-green-700 transition" href="mailto:webdevmohcine@gmail.com">📧 webdevmohcine@gmail.com</a>
+                <a href="tel:+213696244248" class="text-gray-700 text-[16px] hover:text-green-700 transition">📞 +213696244248</a>
+            </div>
+        </div>
+        <p class="md:text-[18px] text-[16px] text-gray-700 pt-8 px-3">Designed and Developed By Mohcene Ziadi  |  &copy;2026 All Rights Reserved</p>
     </footer>
     
     <script src="script.js"></script>
