@@ -4,6 +4,10 @@ function onToggleMenu(e) {
     navLinks.classList.toggle('top-[9%]')
 }
 
-function onToggleBtn (e) {
-    e.innerHTML = e.innerHTML === '🌙​' ? '☀️​' : '🌙​';  
-}
+const btn = document.getElementById("toggle-dark");
+const body = document.body;
+
+btn.onclick = () => {
+  body.classList.toggle("dark");
+  btn.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
+};
