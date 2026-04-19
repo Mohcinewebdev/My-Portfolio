@@ -43,11 +43,11 @@
         <h1 class="text-5xl md:text-6xl font-bold pl-6 pt-8">Contact Me Now</h1>
         </div>
 
-        <form action="#" method="post" class="border rounded-lg p-6 my-10 md:mr-12 md:mt-12 m-auto w-[90%] space-y-3">
+        <form action="contact.php" method="post" class="border rounded-lg p-6 my-10 md:mr-12 md:mt-12 m-auto w-[90%] space-y-3">
             <h2 class="text-3xl font-bold">Send Me A <span class="text-green-700">Message</span></h2>
-            <input class="p-4 outline-none border-b w-full" type="text" placeholder="Full Name" required> <br>
-            <input class="p-4 outline-none border-b w-full" type="email" placeholder="Email Address" required> <br>
-            <input class="p-4 outline-none border-b w-full" type="tel" placeholder="Phone Number" required> <br>
+            <input class="p-4 outline-none border-b w-full" type="text" name="full_name" placeholder="Full Name" required> <br>
+            <input class="p-4 outline-none border-b w-full" type="email" name="email" placeholder="Email Address" required> <br>
+            <input class="p-4 outline-none border-b w-full" type="tel" name="phone" placeholder="Phone Number" required> <br>
             <textarea class="p-4 outline-none border-b w-full" rows="5" cols="10" name="message" id="message" placeholder="Your Message Here..."></textarea> <br>
             <input class="bg-green-600 rounded-full cursor-pointer px-4 py-2 text-white font-bold transition hover:bg-green-700" type="submit" value="Send Now">
         </form>
